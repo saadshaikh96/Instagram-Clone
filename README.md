@@ -5,3 +5,6 @@ This project is a clone of the Instagram web application created using React.js,
 ## Preview
 
 Demo - <<insert demo link here>>
+
+- Next.js is a "framework" for React
+- It allows for server-side rendering of React applications
