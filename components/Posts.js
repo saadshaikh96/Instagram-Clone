@@ -1,6 +1,9 @@
 import React from "react";
 import Post from "./Post";
 
+// TODO:
+// - Update with actual post content
+
 const posts = [
   {
     id: 1,

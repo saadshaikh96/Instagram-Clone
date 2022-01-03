@@ -1,6 +1,7 @@
 import React from "react";
 import Posts from "./Posts";
 import Stories from "./Stories";
+import UserProfileCard from "./UserProfileCard";
 
 function Feed() {
   return (
@@ -11,9 +12,12 @@ function Feed() {
         <Posts />
       </section>
 
-      <section>
-        {/* User profile */}
-        {/* Suggested */}
+      <section className="hidden xl:inline-grid md:col-span-1">
+        <div className="fixed top-20">
+          {/* User profile */}
+          <UserProfileCard />
+          {/* Suggested */}
+        </div>
       </section>
     </main>
   );
