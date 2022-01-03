@@ -12,7 +12,10 @@ import {
 import { HeartIcon as HeartIconFilled } from "@heroicons/react/solid";
 
 // TODO:
-// - Are these needed? - bookmark isSecureContext, paper airplane icon
+// - Are these needed? - bookmark icon, paper airplane icon
+// - Update user interactions on post such as like and Comment
+// - Update behavior to not truncate the caption/comment and expand it to the next line instead
+// - Update the post comment button to be disabled unless there is a comment entered in the input box
 
 function Post({ id, avatar, username, image, caption }) {
   return (
@@ -48,10 +51,23 @@ function Post({ id, avatar, username, image, caption }) {
       </div>
 
       {/* Caption */}
+      <p className="p-5 truncate">
+        <span className="font-bold mr-1">{username} </span>
+        {caption}
+      </p>
 
       {/* Comments */}
 
       {/* Input box for comment */}
+      <form className="flex items-center p-4" action="">
+        <EmojiHappyIcon className="h-7" />
+        <input
+          type="text"
+          className="border-none flex-1 focus:ring-0 outtline-none"
+          placeholder="Add a comment..."
+        />
+        <button className="font-semibold text-blue-400">Post</button>
+      </form>
     </div>
   );
 }
