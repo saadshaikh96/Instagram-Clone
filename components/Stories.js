@@ -29,7 +29,7 @@ function Stories() {
         <Story
           key={profile.id}
           //   img={profile.avatar}
-          img="/images/PlaceholderAvatar.png"
+          avatar="/images/PlaceholderAvatar.png"
           username={profile.username}
         />
       ))}
