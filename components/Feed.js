@@ -1,6 +1,7 @@
 import React from "react";
 import Posts from "./Posts";
 import Stories from "./Stories";
+import Suggestions from "./Suggestions";
 import UserProfileCard from "./UserProfileCard";
 
 function Feed() {
@@ -17,6 +18,7 @@ function Feed() {
           {/* User profile */}
           <UserProfileCard />
           {/* Suggested */}
+          <Suggestions />
         </div>
       </section>
     </main>
