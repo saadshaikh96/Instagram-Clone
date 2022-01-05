@@ -15,7 +15,7 @@ function Suggestions() {
 
   return (
     <div classname="mt-4 ml-10">
-      <div className="flex justify-between text-sm mb-5">
+      <div className="flex justify-between text-sm my-5">
         <h3 className="text-sm font-bold text-gray-400">Suggestions for you</h3>
         <button className="text-gray-600 font-semibold">See all</button>
       </div>
@@ -33,7 +33,7 @@ function Suggestions() {
 
           <div className="flex-1 ml-4">
             <h2 className="font-semibold text-sm">{profile.username}</h2>
-            <h3 className="tex-xs text-gray-400">
+            <h3 className="text-xs text-gray-400">
               Works at {profile.company.name}
             </h3>
           </div>
